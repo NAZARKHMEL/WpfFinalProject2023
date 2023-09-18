@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfFinalProject.UploadProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFinalProject"
+        mc:Ignorable="d"
+        Title="UploadProduct" Height="450" Width="800">
+    <Grid Background="LightBlue">
+        <Border Background="White" BorderBrush="Black" BorderThickness="1,1,1,1" CornerRadius="30,30,30,30" Width="650" Height="350">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="350"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label VerticalAlignment="Top" Name="lbl" Visibility="Hidden"></Label>
+                <Image Grid.Column="0" Width="200" Height="200" Name="photoproduct" Source="{Binding ElementName=lbl, Path=Content}" AllowDrop="True" Drop="Rectangle_Drop" Margin="0,0,0,0" Grid.Row="1"></Image>
+                <Rectangle Grid.Column="0" 
+                   AllowDrop="True"
+                   Fill="WhiteSmoke"
+                   RadiusX="10"
+                   RadiusY="10"
+                   StrokeDashArray="10"
+                   StrokeThickness="2"
+                   StrokeDashCap="Round"
+                   Stroke="Silver"
+                   Height="200"
+                   Width="200" Drop="Rectangle_Drop" Name="kub" Margin="0" Grid.Row="1">
+                </Rectangle>
+                <Image Grid.Column="0" Width="100" Height="100" Name="img" Source="https://cdn-icons-png.flaticon.com/512/20/20829.png" AllowDrop="True" Drop="Rectangle_Drop" Margin="0" Grid.Row="1"></Image>
+
+                <StackPanel Grid.Column="1" VerticalAlignment="Top" Width="300" Margin="50,85,50,0" Grid.Row="1">
+                    <TextBlock Text="Name: "></TextBlock>
+                    <TextBox Name="prodnam" Width="200" HorizontalAlignment="Left"></TextBox>
+                    <TextBlock Text="Description: "></TextBlock>
+                    <RichTextBox Name="prodDescrib" Height="100" Width="200" HorizontalAlignment="Left"></RichTextBox>
+                    <TextBlock Text="Price: "></TextBlock>
+                    <TextBox Width="200" Name="prodPrice" HorizontalAlignment="Left" ></TextBox>
+                    <Button Content="Confirm" Background="Blue" Margin="0,10,0,0" Foreground="White" Width="200" HorizontalAlignment="Left" Click="Button_Click"></Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Label Height="1" Width="1"></Label>
+    </Grid>
+</Window>

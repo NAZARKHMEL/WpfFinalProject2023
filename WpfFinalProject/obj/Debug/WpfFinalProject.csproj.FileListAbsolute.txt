@@ -1,0 +1,93 @@
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\bin\Debug\WpfFinalProject.exe.config
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\bin\Debug\WpfFinalProject.exe
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\bin\Debug\WpfFinalProject.pdb
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.AssemblyReference.cache
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\MainWindow.g.cs
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\App.g.cs
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject_MarkupCompile.cache
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject_MarkupCompile.lref
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\MainWindow.baml
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.g.resources
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.Properties.Resources.resources
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.GenerateResource.cache
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.CoreCompileInputs.cache
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.exe
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.pdb
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Entry.g.cs
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\ProductView.g.cs
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Registration.g.cs
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\UploadProduct.g.cs
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Entry.baml
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\ProductView.baml
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Registration.baml
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\UploadProduct.baml
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Chat.g.cs
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Chat.baml
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\bin\Debug\EntityFramework.dll
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\bin\Debug\EntityFramework.xml
+C:\Users\Nazar\Desktop\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.CopyComplete
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\bin\Debug\WpfFinalProject.exe.config
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\bin\Debug\WpfFinalProject.exe
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\bin\Debug\WpfFinalProject.pdb
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\bin\Debug\EntityFramework.xml
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.AssemblyReference.cache
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.SuggestedBindingRedirects.cache
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Chat.g.cs
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Entry.g.cs
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\MainWindow.g.cs
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\ProductView.g.cs
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Registration.g.cs
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\UploadProduct.g.cs
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\App.g.cs
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject_MarkupCompile.cache
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject_MarkupCompile.lref
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Chat.baml
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Entry.baml
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\MainWindow.baml
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\ProductView.baml
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\Registration.baml
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\UploadProduct.baml
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.g.resources
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.Properties.Resources.resources
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.GenerateResource.cache
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.CoreCompileInputs.cache
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.CopyComplete
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.exe
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.pdb
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject_Content.g.cs
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\bin\Debug\NAZ.mdf
+C:\Users\Nazar\OneDrive - Trøndelag fylkeskommune\Skrivebord\FinalProjects\WpfProject\WpfFinalProject\bin\Debug\NAZ_log.ldf
+C:\WpfProject\WpfFinalProject\bin\Debug\NAZ.mdf
+C:\WpfProject\WpfFinalProject\bin\Debug\NAZ_log.ldf
+C:\WpfProject\WpfFinalProject\bin\Debug\WpfFinalProject.exe.config
+C:\WpfProject\WpfFinalProject\bin\Debug\WpfFinalProject.exe
+C:\WpfProject\WpfFinalProject\bin\Debug\WpfFinalProject.pdb
+C:\WpfProject\WpfFinalProject\bin\Debug\EntityFramework.xml
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.AssemblyReference.cache
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.SuggestedBindingRedirects.cache
+C:\WpfProject\WpfFinalProject\obj\Debug\Chat.g.cs
+C:\WpfProject\WpfFinalProject\obj\Debug\Entry.g.cs
+C:\WpfProject\WpfFinalProject\obj\Debug\MainWindow.g.cs
+C:\WpfProject\WpfFinalProject\obj\Debug\ProductView.g.cs
+C:\WpfProject\WpfFinalProject\obj\Debug\Registration.g.cs
+C:\WpfProject\WpfFinalProject\obj\Debug\UploadProduct.g.cs
+C:\WpfProject\WpfFinalProject\obj\Debug\App.g.cs
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject_Content.g.cs
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject_MarkupCompile.cache
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject_MarkupCompile.lref
+C:\WpfProject\WpfFinalProject\obj\Debug\Chat.baml
+C:\WpfProject\WpfFinalProject\obj\Debug\Entry.baml
+C:\WpfProject\WpfFinalProject\obj\Debug\MainWindow.baml
+C:\WpfProject\WpfFinalProject\obj\Debug\ProductView.baml
+C:\WpfProject\WpfFinalProject\obj\Debug\Registration.baml
+C:\WpfProject\WpfFinalProject\obj\Debug\UploadProduct.baml
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.g.resources
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.Properties.Resources.resources
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.GenerateResource.cache
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.CoreCompileInputs.cache
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.csproj.CopyComplete
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.exe
+C:\WpfProject\WpfFinalProject\obj\Debug\WpfFinalProject.pdb
+C:\WpfProject\WpfFinalProject\bin\Debug\Databases\NAZ.ldf
+C:\WpfProject\WpfFinalProject\bin\Debug\Databases\NAZ.mdf

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NAZModelStoreContainer" CdmEntityContainer="NAZEntities1">
+    <EntitySetMapping Name="Chats">
+      <EntityTypeMapping TypeName="NAZModel.Chat">
+        <MappingFragment StoreEntitySet="Chat">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SenderId" ColumnName="SenderId" />
+          <ScalarProperty Name="ReceiverId" ColumnName="ReceiverId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Messages">
+      <EntityTypeMapping TypeName="NAZModel.Message">
+        <MappingFragment StoreEntitySet="Message">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="MSG" ColumnName="MSG" />
+          <ScalarProperty Name="IdChat" ColumnName="IdChat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="NAZModel.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ImageAddress" ColumnName="ImageAddress" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="IdProfile" ColumnName="IdProfile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profiles">
+      <EntityTypeMapping TypeName="NAZModel.Profile">
+        <MappingFragment StoreEntitySet="Profile">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ImageAddress" ColumnName="ImageAddress" />
+          <ScalarProperty Name="PostAddress" ColumnName="PostAddress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

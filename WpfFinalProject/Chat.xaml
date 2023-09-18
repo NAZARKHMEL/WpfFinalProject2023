@@ -1,0 +1,76 @@
+﻿<Window x:Class="WpfFinalProject.Chat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFinalProject"
+        mc:Ignorable="d"
+        Title="Chat" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="myHeaderStyle" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="Visibility" Value="Collapsed" />
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" Name="ChatView2" Width="160" Visibility="Hidden">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}">
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid Visibility="Hidden" Name="ImgAdress"></DataGrid>
+        <Image Source="C:\WpfProject\WpfFinalProject\Background\Background.png" Stretch="Fill"></Image>
+
+        <ListView Name="lst" Height="240" VerticalAlignment="Top" Width="600" Margin="120,40,0,0" Background="Transparent" BorderBrush="Transparent" FontSize="20">
+            <ListView.View>
+                <GridView ColumnHeaderContainerStyle="{StaticResource myHeaderStyle}" AllowsColumnReorder="False">
+                    <GridViewColumn x:Name="GridViewColumnName" Header="Name"  Width="65">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Ellipse Name="prof" Height="40" Width="40" Margin="10,0,0,0">
+                                    <Ellipse.Fill>
+                                        <ImageBrush x:Name="img" ImageSource="{Binding ImageAddress}" />
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn x:Name="GridViewColumnTags" Header="Tags" Width="500" DisplayMemberBinding="{Binding message}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBox VerticalAlignment="Bottom" Width="200" Margin="0,0,0,18" Height="20" Name="txtMessage">
+            <TextBox.Resources>
+            <Style TargetType="{x:Type Border}">
+                <Setter Property="CornerRadius" Value="5"/>
+            </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Button VerticalAlignment="Bottom" Width="30" Height="30" Margin="260,0,0,15" Background="Blue" Content=">" Foreground="White" Click="Button_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="100"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <ListView HorizontalAlignment="Left" Name="ChatView" Width="160" SelectionChanged="ChatView_SelectionChanged">
+            <ListView.View>
+                <GridView ColumnHeaderContainerStyle="{StaticResource myHeaderStyle}" AllowsColumnReorder="False" x:Name="GridView2">
+                    <GridViewColumn x:Name="GridViewImage" Header="Name"  Width="65">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Ellipse Name="pro2f" Height="40" Width="40">
+                                    <Ellipse.Fill>
+                                        <ImageBrush x:Name="Userimg" ImageSource="{Binding UsersImageAddress}" />
+                                    </Ellipse.Fill>
+                                </Ellipse>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn x:Name="UserName" Header="Tags" DisplayMemberBinding="{Binding UserNames}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

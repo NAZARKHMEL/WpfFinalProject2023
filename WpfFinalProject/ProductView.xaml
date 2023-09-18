@@ -1,0 +1,50 @@
+﻿<Window x:Class="WpfFinalProject.ProductView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFinalProject"
+        mc:Ignorable="d"
+        Title="ProductView" Height="450" Width="800">
+    <Grid Background="AliceBlue" >
+        <Label Visibility="Hidden" Name="ProdAddress"></Label>
+        <Label Visibility="Hidden" Name="ProfImg"></Label>
+        <ScrollViewer>
+            <StackPanel Width="550">
+                <Border Background="White" Width="550" Height="250" Margin="0,40,0,0">
+                    <Image Source="{Binding ElementName=ProdAddress, Path=Content}"  Height="200"  Width="400"></Image>
+                </Border>
+                <Border Background="White" Width="550" Height="180" Margin="0,20,0,0">
+                    <StackPanel>
+                        <Label Name="ProdName" FontSize="20"></Label>
+                        <Label Name="ProdPrice" FontWeight="Bold" FontSize="30"></Label>
+                        <Label Content="Description" FontWeight="Bold" FontSize="20"></Label>
+                        <Label Name="ProdDescripe"></Label>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="White" Width="550" Height="120" Margin="0,20,0,0">
+                    <StackPanel>
+                        <Label Content="Seller" FontWeight="Bold" FontSize="20"></Label>
+                        <StackPanel Orientation="Horizontal">
+                            <Ellipse Name="prof" Height="50" Width="50" Margin="10,0,0,0">
+                                <Ellipse.Fill>
+                                    <ImageBrush x:Name="img" ImageSource="{Binding ElementName=ProfImg, Path=Content}" />
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <Label Name="SellerLogin" FontSize="20"></Label>
+                            <Button Content="Send message" Margin="250,0,0,0" Width="150" FontSize="20" Background="Blue" Foreground="White" Click="Button_Click">
+                                <Button.Resources>
+                                    <Style TargetType="{x:Type Border}">
+                                        <Setter Property="CornerRadius" Value="6"/>
+                                    </Style>
+                                </Button.Resources>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </ScrollViewer>
+        <DataGrid Name="ProfInfo" Visibility="Hidden"></DataGrid>
+    </Grid>
+</Window>

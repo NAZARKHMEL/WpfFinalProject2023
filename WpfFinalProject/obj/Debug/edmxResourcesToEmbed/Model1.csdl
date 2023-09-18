@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NAZModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Chat">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SenderId" Type="Int32" Nullable="false" />
+    <Property Name="ReceiverId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Messages" Relationship="Self.FK__Message__IdChat__2D27B809" FromRole="Chat" ToRole="Message" />
+  </EntityType>
+  <EntityType Name="Message">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MSG" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdChat" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Chat" Relationship="Self.FK__Message__IdChat__2D27B809" FromRole="Message" ToRole="Chat" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ImageAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Price" Type="Int32" Nullable="false" />
+    <Property Name="IdProfile" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Profile" Relationship="Self.FK__Product__IdProfi__286302EC" FromRole="Product" ToRole="Profile" />
+  </EntityType>
+  <EntityType Name="Profile">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Login" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="Int32" Nullable="false" />
+    <Property Name="ImageAddress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PostAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Products" Relationship="Self.FK__Product__IdProfi__286302EC" FromRole="Profile" ToRole="Product" />
+  </EntityType>
+  <Association Name="FK__Message__IdChat__2D27B809">
+    <End Role="Chat" Type="Self.Chat" Multiplicity="1" />
+    <End Role="Message" Type="Self.Message" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Chat">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Message">
+        <PropertyRef Name="IdChat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Product__IdProfi__286302EC">
+    <End Role="Profile" Type="Self.Profile" Multiplicity="1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Profile">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="IdProfile" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NAZEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Chats" EntityType="Self.Chat" />
+    <EntitySet Name="Messages" EntityType="Self.Message" />
+    <EntitySet Name="Products" EntityType="Self.Product" />
+    <EntitySet Name="Profiles" EntityType="Self.Profile" />
+    <AssociationSet Name="FK__Message__IdChat__2D27B809" Association="Self.FK__Message__IdChat__2D27B809">
+      <End Role="Chat" EntitySet="Chats" />
+      <End Role="Message" EntitySet="Messages" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Product__IdProfi__286302EC" Association="Self.FK__Product__IdProfi__286302EC">
+      <End Role="Profile" EntitySet="Profiles" />
+      <End Role="Product" EntitySet="Products" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

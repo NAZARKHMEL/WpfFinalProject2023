@@ -1,0 +1,272 @@
+﻿<Window x:Class="WpfFinalProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfFinalProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid x:Name="grop">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <DataGrid Name="ImgAdress" Visibility="Hidden"></DataGrid>
+        <StackPanel x:Name="PLabes" Visibility="Hidden">
+            <Label Name="Plabe1"></Label>
+            <Label Name="Plabe2"></Label>
+            <Label Name="Plabe3"></Label>
+            <Label Name="Plabe4"></Label>
+            <Label Name="Plabe5"></Label>
+            <Label Name="Plabe6"></Label>
+            <Label Name="Plabe7"></Label>
+            <Label Name="Plabe8"></Label>
+            <Label Name="Plabe9"></Label>
+            <Label Name="Plabe10"></Label>
+            <Label Name="Plabe11"></Label>
+            <Label Name="Plabe12"></Label>
+            <Label Name="NumbOfPage" Content="1"></Label>
+        </StackPanel>
+        <StackPanel x:Name="PLabes2" Visibility="Hidden">
+            <Label Name="Plabe21"></Label>
+            <Label Name="Plabe22"></Label>
+            <Label Name="Plabe23"></Label>
+            <Label Name="Plabe24"></Label>
+            <Label Name="Plabe25"></Label>
+            <Label Name="Plabe26"></Label>
+            <Label Name="Plabe27"></Label>
+            <Label Name="Plabe28"></Label>
+            <Label Name="Plabe29"></Label>
+            <Label Name="Plabe210"></Label>
+            <Label Name="Plabe211"></Label>
+            <Label Name="Plabe212"></Label>
+        </StackPanel>
+        <StackPanel x:Name="PLabes3" Visibility="Hidden">
+            <Label Name="Plabe31"></Label>
+            <Label Name="Plabe32"></Label>
+            <Label Name="Plabe33"></Label>
+            <Label Name="Plabe34"></Label>
+            <Label Name="Plabe35"></Label>
+            <Label Name="Plabe36"></Label>
+            <Label Name="Plabe37"></Label>
+            <Label Name="Plabe38"></Label>
+            <Label Name="Plabe39"></Label>
+            <Label Name="Plabe310"></Label>
+            <Label Name="Plabe311"></Label>
+            <Label Name="Plabe312"></Label>
+        </StackPanel>
+        <StackPanel x:Name="PLabes4" Visibility="Hidden">
+            <Label Name="Plabe41"></Label>
+            <Label Name="Plabe42"></Label>
+            <Label Name="Plabe43"></Label>
+            <Label Name="Plabe44"></Label>
+            <Label Name="Plabe45"></Label>
+            <Label Name="Plabe46"></Label>
+            <Label Name="Plabe47"></Label>
+            <Label Name="Plabe48"></Label>
+            <Label Name="Plabe49"></Label>
+            <Label Name="Plabe410"></Label>
+            <Label Name="Plabe411"></Label>
+            <Label Name="Plabe412"></Label>
+        </StackPanel>
+        <StackPanel x:Name="PLabes5" Visibility="Hidden">
+            <Label Name="Plabe51"></Label>
+            <Label Name="Plabe52"></Label>
+            <Label Name="Plabe53"></Label>
+            <Label Name="Plabe54"></Label>
+            <Label Name="Plabe55"></Label>
+            <Label Name="Plabe56"></Label>
+            <Label Name="Plabe57"></Label>
+            <Label Name="Plabe58"></Label>
+            <Label Name="Plabe59"></Label>
+            <Label Name="Plabe510"></Label>
+            <Label Name="Plabe511"></Label>
+            <Label Name="Plabe512"></Label>
+        </StackPanel>
+        <StackPanel>
+            <Label Name="SendToAddress"></Label>
+            <Label Name="SendToName"></Label>
+            <Label Name="SendToPrice"></Label>
+        </StackPanel>
+        <Rectangle Grid.Row="0" Fill="DarkBlue"/>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Text=" NAZ " Foreground="White" FontSize="40" FontFamily="Arial Black" Background="Blue"/>
+            <Ellipse Name="prof" Height="30" Width="30" Margin="10,0,0,0">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="img" ImageSource="{Binding ElementName=labe, Path=Content}" />
+                </Ellipse.Fill>
+            </Ellipse>
+            <TextBlock Text="  PROFILE  " Visibility="Hidden" Name="letters" Foreground="White" FontSize="20" Padding="0,15,0,0" FontFamily="Bahnschrift emiBold"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0,0,0,0" HorizontalAlignment="Right">
+            <TextBox x:Name="src" Width="200" Height="27" Text="Search" FontSize="20" Margin="0,0,20,0" GotFocus="TextBox_GotFocus" LostFocus="src_LostFocus" TextChanged="src_TextChanged"></TextBox>
+            <TextBlock Width="50" Text="Entry" Foreground="White" FontSize="20" Padding="0,15,0,0" FontFamily="Bahnschrift emiBold" MouseDown="TextBlock_MouseDown_1" ></TextBlock>
+            <TextBlock Width="120" FontFamily="Bahnschrift emiBold" Text="Registration" Foreground="White" FontSize="20" Margin="20,0,0,0" Padding="0,15,0,0" MouseDown="TextBlock_MouseDown"></TextBlock>
+            <Image Name="tripoloski" Source="https://cdn-icons-png.flaticon.com/512/6065/6065255.png" MouseDown="tripoloski_MouseDown" />
+        </StackPanel>
+        <Label Name="labe" Width="100" Visibility="Hidden"></Label>
+        <Label Name="nickname" Visibility="Hidden"></Label>
+        <Label Name="profId" Visibility="Hidden"></Label>
+
+        <Grid Grid.Row="1" Margin="0,0,0,0">
+            <ScrollViewer Name="scroll">
+                <Grid>
+                    <Image Source="C:\Users\Nazar\Pictures\Screenshots\MainWindowBackGround.png" Stretch="Fill"></Image>
+                    <Border Name="ProdBord1" Background="White" BorderBrush="Black"
+                BorderThickness="1,1,1,1" CornerRadius="30,30,30,30" Width="150"
+                Height="150" Margin="0,100,600,500" Grid.Row="1" MouseEnter="Border_MouseEnter"
+                MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe41, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Height="150" Width="100" x:Name="stack">
+                            <Image Name="ProdImage1" Height="80" Width="100" Margin="0,20,0,0" Source="{Binding ElementName=Plabe1,Path=Content}"></Image>
+                            <TextBlock Name="ProdName1" Text="{Binding ElementName=Plabe21,Path=Content}"/>
+                            <TextBlock Name="ProdPrice1" Text="{Binding ElementName=Plabe31,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Name="ProdBord2" Background="White" BorderBrush="Black"
+                BorderThickness="1,1,1,1" CornerRadius="30,30,30,30" Width="150"
+                Height="150" Margin="0,100,200,500" Grid.Row="1" MouseEnter="Border_MouseEnter"
+                MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe42, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1"  Height="150" Width="100">
+                            <Image Name="ProdImage2" Source="{Binding ElementName=Plabe2,Path=Content}" Height="80" Width="100" Margin="0,20,0,0"></Image>
+                            <TextBlock Name="ProdName2" Text="{Binding ElementName=Plabe22,Path=Content}"/>
+                            <TextBlock Name="ProdPrice2" Text="{Binding ElementName=Plabe32,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Name="ProdBord3" Background="White" BorderBrush="Black" BorderThickness="1,1,1,1"
+                CornerRadius="30,30,30,30" Width="150" Height="150" Margin="200,100,0,500" Grid.Row="1"
+                MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe43, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Height="150" Width="100">
+                            <Image Name="ProdImage3" Height="80" Width="100" Margin="0,20,0,0" Source="{Binding ElementName=Plabe3,Path=Content}"></Image>
+                            <TextBlock Name="ProdName3" Text="{Binding ElementName=Plabe23,Path=Content}"/>
+                            <TextBlock Name="ProdPrice3" Text="{Binding ElementName=Plabe33,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Name="ProdBord4" Background="White" BorderBrush="Black" BorderThickness="1,1,1,1"
+                CornerRadius="30,30,30,30" Width="150" Height="150" Margin="600,100,0,500" Grid.Row="1"
+                MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe44, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Height="150" Width="100">
+                            <Image Name="ProdImage4" Source="{Binding ElementName=Plabe4,Path=Content}" Height="80" Width="100" Margin="0,20,0,0"></Image>
+                            <TextBlock Name="ProdName4" Text="{Binding ElementName=Plabe24,Path=Content}"/>
+                            <TextBlock Name="ProdPrice4" Text="{Binding ElementName=Plabe34,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Name="ProdBord5" Background="White" BorderBrush="Black"
+                BorderThickness="1,1,1,1" CornerRadius="30,30,30,30" Width="150"
+                Height="150" Margin="0,100,600,100" Grid.Row="1" MouseEnter="Border_MouseEnter"
+                MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe45, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Height="150" Width="100" >
+                            <Image Name="ProdImage5" Height="80" Width="100" Margin="0,20,0,0" Source="{Binding ElementName=Plabe5,Path=Content}"></Image>
+                            <TextBlock Name="ProdName5" Text="{Binding ElementName=Plabe25,Path=Content}"/>
+                            <TextBlock Name="ProdPrice5" Text="{Binding ElementName=Plabe35,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Name="ProdBord6" Background="White" BorderBrush="Black"
+                BorderThickness="1,1,1,1" CornerRadius="30,30,30,30" Width="150"
+                Height="150" Margin="0,100,200,100" Grid.Row="1" MouseEnter="Border_MouseEnter"
+                MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe46, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Height="150" Width="100" >
+                            <Image Name="ProdImage6" Height="80" Width="100" Margin="0,20,0,0" Source="{Binding ElementName=Plabe6,Path=Content}"></Image>
+                            <TextBlock Name="ProdName6" Text="{Binding ElementName=Plabe26,Path=Content}"/>
+                            <TextBlock Name="ProdPrice6" Text="{Binding ElementName=Plabe36,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Name="ProdBord7" Background="White" BorderBrush="Black" BorderThickness="1,1,1,1"
+                CornerRadius="30,30,30,30" Width="150" Height="150" Margin="200,100,0,100" Grid.Row="1"
+                MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe47, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Height="150" Width="100">
+                            <Image Name="ProdImage7" Height="80" Width="100" Margin="0,20,0,0" Source="{Binding ElementName=Plabe7,Path=Content}"></Image>
+                            <TextBlock Name="ProdName7" Text="{Binding ElementName=Plabe27,Path=Content}"/>
+                            <TextBlock Name="ProdPrice7" Text="{Binding ElementName=Plabe37,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Name="ProdBord8" Background="White" BorderBrush="Black" BorderThickness="1,1,1,1"
+                CornerRadius="30,30,30,30" Width="150" Height="150" Margin="600,100,0,100" Grid.Row="1"
+                MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe48, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Height="150" Width="100">
+                            <Image Name="ProdImage8" Source="{Binding ElementName=Plabe8,Path=Content}" Height="80" Width="100" Margin="0,20,0,0"></Image>
+                            <TextBlock Name="ProdName8" Text="{Binding ElementName=Plabe28,Path=Content}"/>
+                            <TextBlock Name="ProdPrice8" Text="{Binding ElementName=Plabe38,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Name="ProdBord9" Background="White" BorderBrush="Black"
+                BorderThickness="1,1,1,1" CornerRadius="30,30,30,30" Width="150"
+                Height="150" Margin="0,400,600,0" Grid.Row="1" MouseEnter="Border_MouseEnter"
+                MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe49, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Height="150" Width="100" >
+                            <Image Name="ProdImage9" Height="80" Width="100" Margin="0,20,0,0" Source="{Binding ElementName=Plabe9,Path=Content}"></Image>
+                            <TextBlock Name="ProdName9" Text="{Binding ElementName=Plabe29,Path=Content}"/>
+                            <TextBlock Name="ProdPrice9" Text="{Binding ElementName=Plabe39,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Name="ProdBord10" Background="White" BorderBrush="Black"
+                BorderThickness="1,1,1,1" CornerRadius="30,30,30,30" Width="150"
+                Height="150" Margin="0,400,200,0" Grid.Row="1" MouseEnter="Border_MouseEnter"
+                MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe410, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Height="150" Width="100" >
+                            <Image Name="ProdImage10" Height="80" Width="100" Margin="0,20,0,0" Source="{Binding ElementName=Plabe10,Path=Content}"></Image>
+                            <TextBlock Name="ProdName10" Text="{Binding ElementName=Plabe210,Path=Content}"/>
+                            <TextBlock Name="ProdPrice10" Text="{Binding ElementName=Plabe310,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Name="ProdBord11" Background="White" BorderBrush="Black" BorderThickness="1,1,1,1"
+                CornerRadius="30,30,30,30" Width="150" Height="150" Margin="200,400,0,0" Grid.Row="1"
+                MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe411, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Height="150" Width="100">
+                            <Image Name="ProdImage11" Height="80" Width="100" Margin="0,20,0,0" Source="{Binding ElementName=Plabe11,Path=Content}"></Image>
+                            <TextBlock Name="ProdName11" Text="{Binding ElementName=Plabe211,Path=Content}"/>
+                            <TextBlock Name="ProdPrice11" Text="{Binding ElementName=Plabe311,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+                    <Border Name="ProdBord12" Background="White" BorderBrush="Black" BorderThickness="1,1,1,1"
+                CornerRadius="30,30,30,30" Width="150" Height="150" Margin="600,400,0,0" Grid.Row="1"
+                MouseEnter="Border_MouseEnter" MouseLeave="Border_MouseLeave" Visibility="{Binding ElementName=Plabe412, Path=Content}" MouseDown="ProdBord1_MouseDown">
+
+                        <StackPanel Orientation="Vertical" Grid.Row="1" Height="150" Width="100">
+                            <Image Name="ProdImage12" Source="{Binding ElementName=Plabe12,Path=Content}" Height="80" Width="100" Margin="0,20,0,0"></Image>
+                            <TextBlock Name="ProdName12" Text="{Binding ElementName=Plabe212,Path=Content}"/>
+                            <TextBlock Name="ProdPrice12" Text="{Binding ElementName=Plabe312,Path=Content}"/>
+                        </StackPanel>
+                    </Border>
+                    <StackPanel Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Bottom" Width="100" Height="20">
+                        <Button Width="30" Margin="0,0,0,0" Background="Blue" Content="&lt;" Foreground="White" Click="Button_Click">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                        <TextBlock Text="{Binding ElementName=NumbOfPage, Path=Content}" Margin="10,0,0,0">
+                        </TextBlock>
+                        <Button Width="30" Margin="10,0,0,0" Background="Blue" Content="&gt;" Foreground="White" Click="Button_Click_1">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="10"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </StackPanel>
+                </Grid>
+            </ScrollViewer>
+            <StackPanel Grid.Row="1" Width="0" Height="800" HorizontalAlignment="Right" Name="menu" Background="LightBlue" >
+                <TextBlock Text="Upload product" MouseDown="Label_MouseDown" Foreground="Black" FontFamily="Bahnschrift emiBold" Name="Upload" MouseEnter="Upload_MouseEnter" MouseLeave="Upload_MouseLeave" Height="40" Padding="0,20,0,0" Width="90" FontSize="13"></TextBlock>
+                <TextBlock Text="Exit" Foreground="Black" FontFamily="Bahnschrift emiBold" Name="Exit" MouseEnter="Upload_MouseEnter" MouseLeave="Upload_MouseLeave" Height="40" Padding="30,20,0,0" Width="90" FontSize="13" MouseDown="Exit_MouseDown"/>
+                <TextBlock Text="Chats" Foreground="Black" FontFamily="Bahnschrift emiBold" Name="СhatList" MouseEnter="Upload_MouseEnter" MouseLeave="Upload_MouseLeave" Height="40" Padding="25,20,0,0" Width="90" FontSize="13" MouseDown="СhatList_MouseDown"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
